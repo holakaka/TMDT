@@ -1,0 +1,2 @@
+2022-11-11T02:30:59+00:00 CRITICAL Out of memory (allocated 41943040) (tried to allocate 32768 bytes) in C:\xampp\htdocs\TMDT\wp-content\themes\blossom-fashion\inc\tgmpa\class-tgm-plugin-activation.php on line 2189
+
