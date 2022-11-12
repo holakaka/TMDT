@@ -69,3 +69,32 @@ if ( version_compare( get_bloginfo( 'version' ), '4.7.3', '>=' ) && ( is_admin()
  * Note: Do not add any custom code here. Please use a custom plugin so that your customizations aren't lost during updates.
  * https://github.com/woocommerce/theme-customisations
  */
+
+/**
+
+ * @snippet       Hide Dashboard on the My Account Page
+
+  */
+
+add_filter( 'woocommerce_account_menu_items', 'njengah_remove_my_account_dashboard' );
+
+function njengah_remove_my_account_dashboard( $menu_links ){
+
+            unset( $menu_links['dashboard'] );
+			unset( $menu_links[ 'downloads' ] );
+            return $menu_links;
+
+ }
+add_action('template_redirect', 'njengah_redirect_to_orders_from_dashboard' );
+
+function njengah_redirect_to_orders_from_dashboard(){
+
+if( is_account_page() && empty( WC()->query->get_current_endpoint() ) ){
+
+wp_safe_redirect( wc_get_account_endpoint_url( 'orders' ) );
+
+exit;
+
+}
+
+}
