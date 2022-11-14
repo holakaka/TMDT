@@ -1,0 +1,26 @@
+11-13-2022 @ 03:58:25 - Unable to detect valid feed configuration: No catalog ID
+11-13-2022 @ 06:19:56 - There was an error trying sync products using the Catalog Batch API for job 0ca5253f5361cbc82ba2b2ffdcc69670: Cannot create the API instance because the access token is missing.
+11-13-2022 @ 07:23:35 - There was an error trying sync products using the Catalog Batch API for job 6e7838588f5ab7fd3261f08a2d742a95: Cannot create the API instance because the access token is missing.
+11-13-2022 @ 07:23:40 - There was an error trying sync products using the Catalog Batch API for job 38686930d1f09ab6d7a514ab2af0c0a3: Cannot create the API instance because the access token is missing.
+11-13-2022 @ 07:23:44 - There was an error trying sync products using the Catalog Batch API for job 94e6deb5c036faf9a704e53486557c57: Cannot create the API instance because the access token is missing.
+11-13-2022 @ 09:15:36 - There was an error trying sync products using the Catalog Batch API for job 6b1b5862c0aa49b5495d7a6eaf1ab7c9: Cannot create the API instance because the access token is missing.
+11-13-2022 @ 09:42:28 - There was an error trying sync products using the Catalog Batch API for job cf6f93bd490a0e44668e8713f79a007d: Cannot create the API instance because the access token is missing.
+11-13-2022 @ 14:13:04 - There was an error trying sync products using the Catalog Batch API for job 2852cb8d4a27f81f309c03f5d50121fd: Cannot create the API instance because the access token is missing.
+11-13-2022 @ 14:29:34 - Background sync error: No product found with ID equal to 546.
+11-13-2022 @ 14:30:47 - Background sync error: No product found with ID equal to 548.
+11-13-2022 @ 14:30:47 - Background sync error: No product found with ID equal to 549.
+11-13-2022 @ 14:30:47 - Background sync error: No product found with ID equal to 550.
+11-13-2022 @ 14:30:47 - Background sync error: No product found with ID equal to 551.
+11-13-2022 @ 14:30:47 - Background sync error: No product found with ID equal to 552.
+11-13-2022 @ 14:30:47 - Background sync error: No product found with ID equal to 553.
+11-13-2022 @ 14:30:47 - Background sync error: No product found with ID equal to 554.
+11-13-2022 @ 14:30:47 - Background sync error: No product found with ID equal to 555.
+11-13-2022 @ 14:30:47 - Background sync error: No product found with ID equal to 556.
+11-13-2022 @ 14:30:47 - Background sync error: No product found with ID equal to 557.
+11-13-2022 @ 14:30:47 - Background sync error: No product found with ID equal to 558.
+11-13-2022 @ 14:30:47 - Background sync error: No product found with ID equal to 559.
+11-13-2022 @ 14:30:47 - Background sync error: No product found with ID equal to 560.
+11-13-2022 @ 14:34:24 - There was an error trying sync products using the Catalog Batch API for job df3b53d95fb703ca458f6a7edc1fb807: Cannot create the API instance because the access token is missing.
+11-13-2022 @ 14:43:56 - There was an error trying sync products using the Catalog Batch API for job f58c0db1aa7447e69ca93804dae5b505: Cannot create the API instance because the access token is missing.
+11-13-2022 @ 14:59:18 - There was an error trying sync products using the Catalog Batch API for job 6b91a39addeab71468052dcaefd2842a: Cannot create the API instance because the access token is missing.
+11-13-2022 @ 15:09:46 - There was an error trying sync products using the Catalog Batch API for job cc10c7e5dcc83e4562164c277e8156a2: Cannot create the API instance because the access token is missing.

@@ -82,6 +82,7 @@ function njengah_remove_my_account_dashboard( $menu_links ){
 
             unset( $menu_links['dashboard'] );
 			unset( $menu_links[ 'downloads' ] );
+			unset( $menu_links[ 'edit-address' ] );
             return $menu_links;
 
  }
@@ -92,9 +93,18 @@ function njengah_redirect_to_orders_from_dashboard(){
 if( is_account_page() && empty( WC()->query->get_current_endpoint() ) ){
 
 wp_safe_redirect( wc_get_account_endpoint_url( 'orders' ) );
+	
 
 exit;
 
 }
+	
+function disable_shipping_calc_on_cart( $show_shipping ) {
+    if( is_cart() ) {
+        return false;
+    }
+    return $show_shipping;
+}
+add_filter( 'woocommerce_cart_ready_to_calc_shipping', 'disable_shipping_calc_on_cart', 99 );
 
 }

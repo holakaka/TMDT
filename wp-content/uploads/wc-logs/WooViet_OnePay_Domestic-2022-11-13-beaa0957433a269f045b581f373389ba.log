@@ -1,0 +1,113 @@
+2022-11-13T07:13:32+00:00 INFO get_pay_url - Order ID: 540 - http_args: Array
+(
+    [Title] => OnePay Payment Title
+    [vpc_Merchant] => ONEPAY
+    [vpc_AccessCode] => D67342C2
+    [vpc_MerchTxnRef] => 540_20221113071332
+    [vpc_OrderInfo] => Order #540 - localhost/TMDT
+    [vpc_Amount] => 3950100
+    [vpc_ReturnURL] => https://localhost/TMDT/?page_id=9&order-received=540&key=wc_order_TNRwFRyDj7rOm&utm_nooverride=1
+    [vpc_Version] => 2
+    [vpc_Command] => pay
+    [vpc_Locale] => en
+    [vpc_Currency] => VND
+    [vpc_TicketNo] => ::1
+    [AgainLink] => https://localhost/TMDT/?page_id=9
+    [vpc_SecureHash] => 6B4F1ABF12134D89E9E1A42CAD8614BA88B5C02DB5785E97C2BAE723C87A2756
+)
+
+2022-11-13T07:35:15+00:00 INFO handle_onepay_querydr - http_link: https://mtf.onepay.vn/onecomm-pay/Vpcdps.op?vpc_Command=queryDR&vpc_Version=1&vpc_MerchTxnRef=540_20221113071332&vpc_Merchant=ONEPAY&vpc_AccessCode=D67342C2&vpc_User=op01&vpc_Password=op123456 - http_args: Array
+(
+    [vpc_Command] => queryDR
+    [vpc_Version] => 1
+    [vpc_MerchTxnRef] => 540_20221113071332
+    [vpc_Merchant] => ONEPAY
+    [vpc_AccessCode] => D67342C2
+    [vpc_User] => op01
+    [vpc_Password] => op123456
+)
+
+2022-11-13T07:35:16+00:00 INFO process_onepay_response_data - Order ID: 540 - Order Note: WooViet_OnePay_Domestic Gateway Info | Code: 100 | Message: Giao dịch thất bại - Failure | MerchantTxnRef: 540_20221113071332 | Type: querydr - http_args: Array
+(
+    [vpc_DRExists] => Y
+    [vpc_AdditionData] => 999999
+    [vpc_Amount] => 3950100
+    [vpc_Command] => pay
+    [vpc_CurrencyCode] => VND
+    [vpc_Locale] => vn
+    [vpc_MerchTxnRef] => 540_20221113071332
+    [vpc_Merchant] => ONEPAY
+    [vpc_Message] => Transaction was not successful
+    [vpc_OrderInfo] => Order #540 - localhost/TMDT
+    [vpc_TransactionNo] => 2073089
+    [vpc_TxnResponseCode] => 100
+    [vpc_Version] => 2
+)
+
+2022-11-13T14:57:38+00:00 INFO get_pay_url - Order ID: 605 - http_args: Array
+(
+    [Title] => OnePay Payment Title
+    [vpc_Merchant] => ONEPAY
+    [vpc_AccessCode] => D67342C2
+    [vpc_MerchTxnRef] => 605_20221113145738
+    [vpc_OrderInfo] => Order #605 - localhost/TMDT
+    [vpc_Amount] => 12000000
+    [vpc_ReturnURL] => https://localhost/TMDT/?page_id=9&order-received=605&key=wc_order_kTqmjucbciux2&utm_nooverride=1
+    [vpc_Version] => 2
+    [vpc_Command] => pay
+    [vpc_Locale] => en
+    [vpc_Currency] => VND
+    [vpc_TicketNo] => ::1
+    [AgainLink] => https://localhost/TMDT/?page_id=9
+    [vpc_SecureHash] => D5F981CF3884948ED6A852A764424ED8E653C4A3FCFCD9C0333B73E32766F158
+)
+
+2022-11-13T14:59:10+00:00 INFO process_onepay_response_data - Order ID: 605 - Order Note: WooViet_OnePay_Domestic Gateway Info | Code: 0 | Message: Giao dịch thành công - Approved | MerchantTxnRef: 605_20221113145738 | Type: return - http_args: Array
+(
+    [page_id] => 9
+    [order-received] => 605
+    [key] => wc_order_kTqmjucbciux2
+    [utm_nooverride] => 1
+    [vpc_AdditionData] => 970425
+    [vpc_Amount] => 12000000
+    [vpc_Command] => pay
+    [vpc_CurrencyCode] => VND
+    [vpc_Locale] => en
+    [vpc_MerchTxnRef] => 605_20221113145738
+    [vpc_Merchant] => ONEPAY
+    [vpc_Message] => Approved
+    [vpc_OrderInfo] => Order #605 - localhost/TMDT
+    [vpc_TransactionNo] => 2073104
+    [vpc_TxnResponseCode] => 0
+    [vpc_Version] => 2
+)
+
+2022-11-13T15:17:43+00:00 INFO handle_onepay_querydr - http_link: https://mtf.onepay.vn/onecomm-pay/Vpcdps.op?vpc_Command=queryDR&vpc_Version=1&vpc_MerchTxnRef=605_20221113145738&vpc_Merchant=ONEPAY&vpc_AccessCode=D67342C2&vpc_User=op01&vpc_Password=op123456 - http_args: Array
+(
+    [vpc_Command] => queryDR
+    [vpc_Version] => 1
+    [vpc_MerchTxnRef] => 605_20221113145738
+    [vpc_Merchant] => ONEPAY
+    [vpc_AccessCode] => D67342C2
+    [vpc_User] => op01
+    [vpc_Password] => op123456
+)
+
+2022-11-13T15:17:44+00:00 INFO process_onepay_response_data - Order ID: 605 - Order Note: WooViet_OnePay_Domestic Gateway Info | Code: 0 | Message: Giao dịch thành công - Approved | MerchantTxnRef: 605_20221113145738 | Type: querydr - http_args: Array
+(
+    [vpc_DRExists] => Y
+    [vpc_AdditionData] => 970425
+    [vpc_Amount] => 12000000
+    [vpc_AuthenticationDate] => 20221113T150107Z
+    [vpc_Command] => pay
+    [vpc_CurrencyCode] => VND
+    [vpc_Locale] => vn
+    [vpc_MerchTxnRef] => 605_20221113145738
+    [vpc_Merchant] => ONEPAY
+    [vpc_Message] => Transaction was successful
+    [vpc_OrderInfo] => Order #605 - localhost/TMDT
+    [vpc_TransactionNo] => 2073104
+    [vpc_TxnResponseCode] => 0
+    [vpc_Version] => 2
+)
+

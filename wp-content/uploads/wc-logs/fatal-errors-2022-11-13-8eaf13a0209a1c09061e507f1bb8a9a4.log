@@ -1,0 +1,10 @@
+2022-11-13T03:58:33+00:00 CRITICAL Out of memory (allocated 12582912) (tried to allocate 32768 bytes) in C:\xampp\htdocs\TMDT\wp-admin\includes\upgrade.php on line 290
+
+2022-11-13T05:39:35+00:00 CRITICAL Maximum execution time of 300 seconds exceeded in C:\xampp\htdocs\TMDT\wp-includes\Requests\Transport\cURL.php on line 462
+
+2022-11-13T05:40:13+00:00 CRITICAL Maximum execution time of 300 seconds exceeded in C:\xampp\htdocs\TMDT\wp-includes\Requests\Transport\cURL.php on line 462
+
+2022-11-13T05:42:19+00:00 CRITICAL Maximum execution time of 300 seconds exceeded in C:\xampp\htdocs\TMDT\wp-includes\Requests\Transport\cURL.php on line 462
+
+2022-11-13T05:59:04+00:00 CRITICAL Maximum execution time of 300 seconds exceeded in C:\xampp\htdocs\TMDT\wp-includes\Requests\Transport\cURL.php on line 462
+
