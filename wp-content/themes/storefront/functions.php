@@ -106,5 +106,22 @@ function disable_shipping_calc_on_cart( $show_shipping ) {
     return $show_shipping;
 }
 add_filter( 'woocommerce_cart_ready_to_calc_shipping', 'disable_shipping_calc_on_cart', 99 );
+	
+/**
+
+ * @snippet       Rename State Field Label @ WooCommerce Checkout
+
+*/
+
+add_filter( 'woocommerce_default_address_fields' , 'njengah_rename_state_province', 9999 );
+
+function njengah_rename_state_province( $fields ) {
+
+    $fields['first_name']['label'] = 'Full name';
+	$fields['first_name']['class'][0] = 'form-row-wide';
+
+    return $fields;
+
+}
 
 }
