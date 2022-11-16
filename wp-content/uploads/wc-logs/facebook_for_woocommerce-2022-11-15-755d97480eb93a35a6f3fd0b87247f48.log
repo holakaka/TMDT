@@ -1,3 +1,7 @@
 11-15-2022 @ 06:25:33 - Unable to detect valid feed configuration: No catalog ID
 11-15-2022 @ 06:25:33 - Unable to detect valid feed configuration: No catalog ID
 11-15-2022 @ 14:44:21 - There was an error trying sync products using the Catalog Batch API for job 2b7b0c59ea41a89d9672ccfc9b68e40c: Cannot create the API instance because the access token is missing.
+11-15-2022 @ 09:12:59 - There was an error trying sync products using the Catalog Batch API for job aa8abc4ae7c466cf36cba0a0fad706d5: Cannot create the API instance because the access token is missing.
+11-15-2022 @ 15:56:07 - There was an error trying sync products using the Catalog Batch API for job 06e353ba2c79c1860fba1f45e4c5e64a: Cannot create the API instance because the access token is missing.
+11-15-2022 @ 15:58:47 - There was an error trying sync products using the Catalog Batch API for job 5059a667f98ce4e3dee63fb94e4f727e: Cannot create the API instance because the access token is missing.
+11-15-2022 @ 16:12:02 - There was an error trying sync products using the Catalog Batch API for job 56acbd783c840053fdfa0c5087f4dce1: Cannot create the API instance because the access token is missing.
