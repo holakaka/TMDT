@@ -123,5 +123,64 @@ function njengah_rename_state_province( $fields ) {
     return $fields;
 
 }
+//set order status after payment successfully
+add_action( 'woocommerce_payment_complete', 'webappick_set_completed_for_paid_orders' );
+
+function webappick_set_completed_for_paid_orders( $order_id ) {
+
+$order = wc_get_order( $order_id );
+
+$order->update_status( 'payment-received' );
+
+}
+//set order status after user select Cash on delivery
+add_action( 'woocommerce_thankyou', 'woocommerce_thankyou_change_order_status', 10, 1 );
+
+function woocommerce_thankyou_change_order_status( $order_id ){
+
+if( ! $order_id ) return;
+
+$order = wc_get_order( $order_id );
+
+if( $order->get_status() == 'processing' )
+
+     $order->update_status( 'preparingcash' );
+
+}
+//unset pay button
+add_filter( 'woocommerce_my_account_my_orders_actions', 'bbloomer_order_again_action', 9999, 2 );
+    
+function bbloomer_order_again_action( $actions, $order ) {
+//     if ( $order->has_status( 'payment-received' ) || $order->has_status( 'preparing' ) ) {
+//         $actions['cancelled-payed'] = array(
+// //             'url' => $order->update_status( 'cancelled-payed' ),
+// //            'url' => wp_nonce_url( add_query_arg( array('cancelled-payed'=>'true', 'order'=>$order->get_order_key() ,'order_id' => $order->get_id()), wc_get_page_permalink( 'myaccount' ) ), 'woocommerce-cancelled_payed' ),
+// 			'name' => __( 'Cancel', 'woocommerce' ),
+//         );
+//     }
+	   	unset($actions['pay']);
+    return $actions;
+}
+	add_action('admin_init', 'set_user_screen_options'); 
+// Use this if you want it to work for users that already exist, just go to admin and reload once, then you can use only the function 'user_register'
+
+function set_user_screen_options() {
+    $meta_key['hidden'] = 'manageedit-shop_ordercolumnshidden';
+    $meta_value = array(
+        'billing_address',
+        'shipping_address',
+    );
+	
+	 $meta_key['hidden'] = 'metaboxhidden_shop_order';
+    $meta_value = array(
+        'woocommerce-order-data',
+    );
+
+    // set the default hiddens if it has not been set yet, you can remove this for testing, so it will work no matter the preferences saved
+    if ( ! get_user_meta( $user->ID, $meta_key['hidden'], true) ) {
+        update_user_meta( $user->ID, $meta_key['hidden'], $meta_value );
+    }
+
+}
 
 }

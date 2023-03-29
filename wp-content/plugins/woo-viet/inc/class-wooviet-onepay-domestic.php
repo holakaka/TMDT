@@ -22,6 +22,7 @@ class WooViet_OnePay_Domestic extends WooViet_OnePay_Abstract {
 
 	public function get_onepay_payment_link( $testmode ) {
 		return $testmode ? 'https://mtf.onepay.vn/onecomm-pay/vpc.op' : 'https://onepay.vn/onecomm-pay/vpc.op';
+		//return $testmode ? 'https://mtf.onepay.vn/client/merchant_client_demo/' : 'https://onepay.vn/onecomm-pay/vpc.op';
 	}
 
 	public function get_onepay_querydr_link( $testmode ) {
